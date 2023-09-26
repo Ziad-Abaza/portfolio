@@ -1,3 +1,10 @@
+// عند تحميل الصفحة بالكامل
+window.addEventListener('load', function () {
+    // ابحث عن عنصر الشاشة التي تحتوي على رمز التحميل وقم بإخفائه
+    var loader = document.getElementById('loader');
+    loader.style.display = 'none';
+    
+});
 // عند تحميل الصفحة
 window.onload = () => {
     ///////////////////     Slide Show (عرض الشرائح)     ////////////////
