@@ -85,6 +85,38 @@ body {
     color: var(--color-4);
 }
 
+/*/////////////////////// loader Styles ///////////////////////*/
+
+/* أسلوب تخصيص شاشة التحميل */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 247, 247); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+/* أسلوب تخصيص الرمز (رمز التحميل) */
+.loader {
+    border: 4px solid var(--color-4);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spinner 2s linear infinite; 
+}
+
+/* تحريك الرمز (دورانه) */
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /*/////////////////////// Setting Box Styles ///////////////////////*/
 
 /* تنسيق مربع الإعدادات */
